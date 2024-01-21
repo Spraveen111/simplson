@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #FF7171;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+
+.nav-list li {
+    margin: 0 15px;
+    color:black;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.text{
+    color: black;
+    font-family: serif;
+}
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        margin-bottom: 0px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.click-button {
+    background-color: #FF7171;
+    outline: none;
+    border: solid 0px;
+    padding: 10px;
+    color: white;
+}
+
+.lorem-para {
+    font-size: 10px;
+    font-weight: 100;
+
+}
+
+.lorem-background{
+    margin:10px;
+}
+.main-container1 {
+    background-image: linear-gradient(to right, #FFF3B1, #FFD6CD)
+}
+.image-element{
+    width: 100%;
+}
+
+@media(min-width:768px){
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.second{
+    height:300px;
+    width:300px;
+}
+.first{
+    height:300px;
+    width:300px;
+}
+.third-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width:760px){
+    .third-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.last{
+    background-color: #FF7171;
+    padding:10px;
+    margin-bottom:30px;
+}
+
+
+
+
